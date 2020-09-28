@@ -2,6 +2,7 @@ body {
 	height: 100%;
 	margin: 0;
 	text-align: center;
+	align-content: space-around; 
 	width: 100%;
 }
 
@@ -40,8 +41,8 @@ header nav {
 }
 
 #splash {
-	padding: 8px;
-	float: left;
+	padding: 5px;
+	float: center;
 }
 
 #bar {

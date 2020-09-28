@@ -59,6 +59,7 @@ header nav {
 p {
   padding: 0 20px;
   margin: 0;
+  /*text-align: left;*/
 }
 
 /*#contact_header {
@@ -79,9 +80,9 @@ p {
 }
 
 #bio {
-	padding-top: 90px;
+	padding-top: 10%;
 	padding-bottom: 40px;
-/*	text-align: left;*/
+	padding-left: 2%;
 }
 
 #greeting {
@@ -90,15 +91,11 @@ p {
 }
 
 #contact {
-	/*text-align: left;*/
+	padding-left: 2%;
 }
 
 #links {
-	padding-left: 30px;
-}
-
-#link {
-	font-family: Futura, serif;
+	padding-right: 30px;
 }
 
 a {
