@@ -2,7 +2,6 @@ body {
 	height: 100%;
 	margin: 0;
 	text-align: center;
-	align-content: space-around; 
 	width: 100%;
 }
 
@@ -24,25 +23,25 @@ footer .row {
 
 #left
 {
-    margin-left: 8px;
- 	margin-right: 8px;	
+    margin-left: 20px;
+ 	margin-right: 20px;	
 }
 
 
 #mid
 {
-    margin-left: 8px;
- 	margin-right: 8px;
+    margin-left: 20px;
+ 	margin-right: 20px;
 }
 
-header nav {
+h/*eader nav {
   display: flex;
   justify-content: flex-end;
-}
+}*/
 
 #splash {
-	padding: 5px;
-	float: center;
+	padding: 8px;
+	float: left;
 }
 
 #bar {
@@ -59,7 +58,7 @@ a {
 }
 
 a:hover {
-     color:#A28EB4; 
+     color:#A28EB6; 
      text-decoration:none; 
      cursor:pointer;  
 }
