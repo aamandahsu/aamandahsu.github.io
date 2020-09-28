@@ -1,6 +1,30 @@
+body {
+	/*font-size: 16px;*/
+	font-family: 'Barlow';
+	margin:0;
+	height: 100%;
+	width: 100%;
+}
+
+h1 {
+	/*font-size: 60px;*/
+	/*font-family: Bodoni 72, serif;*/
+	/*color: #707070;*/ 
+	text-align: left;
+	padding: 15px 0;
+	margin-top: 30px;
+}
+
+header .row,
+footer .row {
+  display: flex;
+  align-items: center; 
+}
+
+
 #projname {
 	text-align: right;
-	font-size: 60px;
+	font-size: 52px;
 	padding-top: 18px;
 	font-family: 'Futura'
 }
@@ -46,31 +70,14 @@
 	color:gray;
 }
 
-header .row,
-footer .row {
-  display: flex;
-  align-items: center; 
-}
 
-
-header nav {
-  display: flex;
-  justify-content: flex-end;
-}
-
-
-
-#contact_header {
-	height: 150px;
-	background-color: #EFE7F7;
-}
 
 #contact {
 	padding-right: 300px 0;
 }
 
 #bar {
-	padding-left: 5%;
+	padding: 20px;
 }
 
 
@@ -82,11 +89,6 @@ header nav {
 	padding-top: 20px;
 }
 
-body {
-	font-size: 16px;
-	font-family: 'Barlow';
-	margin:0;
-}
 
 li {
 	padding-top: 1%;
@@ -99,7 +101,7 @@ a {
 }
 
 a:hover {
-     color:#A28EB4; 
+     color:#73213D; 
      text-decoration:none; 
      cursor:pointer;  
 }

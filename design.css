@@ -34,14 +34,14 @@ footer .row {
  	margin-right: 20px;
 }
 
-h/*eader nav {
+/*header nav {
   display: flex;
   justify-content: flex-end;
 }*/
 
 #splash {
-	padding: 8px;
-	float: left;
+	/*padding: 8px;
+*/	float: center;
 }
 
 #bar {
@@ -58,7 +58,7 @@ a {
 }
 
 a:hover {
-     color:#A28EB6; 
+     color:#73213D; 
      text-decoration:none; 
      cursor:pointer;  
 }
