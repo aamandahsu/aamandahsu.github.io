@@ -1,0 +1,37 @@
+body, html {
+  height: 100%;
+}
+
+.bg { 
+  /* The image used */
+  background-image: url("yuh.png");
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+p {
+	font-family: 'Futura';
+	margin-bottom: 0; 
+	text-align: center;
+}
+
+a {
+	font-family: 'Futura';
+	/*text-align: right;*/
+}
+
+#enter:hover {
+	color: black; 
+    text-decoration: none;
+    cursor:pointer;  
+}
+/*
+b {
+	text-align: center;
+}*/

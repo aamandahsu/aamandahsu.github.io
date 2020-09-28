@@ -1,0 +1,106 @@
+#projname {
+	text-align: right;
+	font-size: 60px;
+	padding-top: 18px;
+	font-family: 'Futura'
+}
+
+#tags {
+	text-align: right;
+	font-size: 14px;
+	padding-top: 18px;
+}
+
+#intro {
+	padding-top: 3%;
+}
+
+#overview {
+	text-align: right;
+	font-size: 16px;
+	padding-top: 18px;
+}
+
+/*#section {
+	padding-top: 4%;
+	padding-bottom: 10%;
+}*/
+
+#sectiontitle {
+	font-size: 32px;
+	font-family: 'Futura'
+}
+
+
+
+#amanda {
+	/*font-size: 60px;*/
+	font-family: Bodoni 72, serif;
+	/*color: #707070; */
+	text-align: left;
+	padding: 15px 0;
+	margin-top: 30px;
+}
+
+#photodesc {
+	color:gray;
+}
+
+header .row,
+footer .row {
+  display: flex;
+  align-items: center; 
+}
+
+
+header nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+
+#contact_header {
+	height: 150px;
+	background-color: #EFE7F7;
+}
+
+#contact {
+	padding-right: 300px 0;
+}
+
+#bar {
+	padding-left: 5%;
+}
+
+
+
+#title {
+	text-align: left;
+	font-size: 20px;
+	font-family: 'Hind', sans-serif;
+	padding-top: 20px;
+}
+
+body {
+	font-size: 16px;
+	font-family: 'Barlow';
+	margin:0;
+}
+
+li {
+	padding-top: 1%;
+	padding-bottom: 1%;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+     color:#A28EB4; 
+     text-decoration:none; 
+     cursor:pointer;  
+}
+
