@@ -3,6 +3,7 @@ body {
 	margin: 0;
 	text-align: center;
 	width: 100%;
+	background-color:#C2A2B3;
 }
 
 h1 {
@@ -26,7 +27,9 @@ h1 {
 }
 
 h2 {
-	font-size: 50px;
+	font-size: 40px;
+	
+	color:#73213D; 
 }
 
 h3 {
@@ -57,8 +60,11 @@ header nav {
 
 
 p {
-  padding: 0 20px;
+  /*padding: 0 20px;*/
+  padding-left: 28%;
+  padding-right: 28%;
   margin: 0;
+  color:#73213D; 
 }
 
 #contact_header {
@@ -73,6 +79,7 @@ p {
 #bar {
 	font-family: Barlow;
 	padding: 20px;
+	color:#73213D; 
 }
 
 
@@ -82,7 +89,7 @@ a {
 }
 
 a:hover {
-     color:#A28EB4; 
+     color:#73213D; 
      text-decoration:none; 
      cursor:pointer;  
 }
