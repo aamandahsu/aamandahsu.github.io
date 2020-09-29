@@ -10,11 +10,11 @@ body, html {
 
 .bg { 
   /* The image used */
-  background: black;
-  background-image: url("yuh.png");
+  /*background: black;*/
+  background-image: url(yuh.png);
 
   /* Full height */
-  height: 10%; 
+  height: 100%; 
 
   /* Center and scale the image nicely */
   background-position: top;
