@@ -1,5 +1,11 @@
+#enter {
+  color: #9F7986;
+  font-family: Futura;
+
+}
+
 #enter:hover {
-  color: black; 
+  color: #73213D; 
     text-decoration: none;
     cursor:pointer;  
 }
@@ -24,12 +30,15 @@ body, html {
 
 p {
 	font-family: 'Futura';
-	margin-bottom: 0; 
+	margin-bottom: 6px; 
 	text-align: center;
+
 }
 
 a {
 	font-family: 'Futura';
+  padding-left: 2%;
+  padding-right: 2%;
 	/*text-align: right;*/
 }
 
