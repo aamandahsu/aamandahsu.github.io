@@ -44,13 +44,15 @@ footer .row {
 */	float: center;
 }
 
+#contact {
+	padding-right: 300px 0;
+}
+
 #bar {
 	padding: 20px;
 }
 
-#contact {
-	padding-right: 300px 0;
-}
+
 
 a {
     color: black;
