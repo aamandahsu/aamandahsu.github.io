@@ -6,6 +6,11 @@ body {
 	align-content: center;
 }
 
+div {
+	padding-left: 8%;
+	padding-right: 8%;
+}
+
 h1 {
 	/*font-size: 60px;*/
 	/*font-family: Bodoni 75, serif;*/
