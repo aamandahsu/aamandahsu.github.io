@@ -1,4 +1,75 @@
+body {
+	/*font-size: 16px;*/
+	font-family: 'Barlow';
+	margin:0;
+	height: 100%;
+	width: 100%;
+}
+
 h1 {
+	/*font-size: 60px;*/
+	/*font-family: Bodoni 72, serif;*/
+	/*color: #707070;*/ 
+	text-align: left;
+	padding: 15px 0;
+	margin-top: 30px;
+}
+
+
+div {
+	padding-left: 8%;
+	padding-right: 8%;
+}
+
+
+#final {
+	background-color: #EEEEEE;
+	width:100%;
+}
+
+
+#projname {
+	text-align: left;
+	font-size: 52px;
+	padding-top: 1px;
+	font-family: 'Futura'
+}
+
+#tags {
+	text-align: left;
+	font-size: 14px;
+	padding-top: 18px;
+}
+
+#intro {
+	padding-top: 1%;
+}
+
+#overview {
+	text-align: left;
+	font-size: 16px;
+	padding-top: 0px;
+}
+
+/*#section {
+	padding-top: 4%;
+	padding-bottom: 10%;
+}*/
+
+#sectiontitle {
+	font-size: 32px;
+	font-family: 'Futura'
+}
+
+#subsectiontitle {
+	font-size: 24px;
+	font-family: 'Futura'
+}
+
+
+
+
+#amanda {
 	/*font-size: 60px;*/
 	font-family: Bodoni 72, serif;
 	/*color: #707070; */
@@ -7,49 +78,33 @@ h1 {
 	margin-top: 30px;
 }
 
-div {
-	padding-left: 8%;
-	padding-right: 8%;
-}
-
-
-p {
-  padding: 0 20px;
-  margin: 0;
+#photodesc {
+	color:gray;
 }
 
 
 
-/*#contact {
+#contact {
 	padding-right: 300px 0;
-}*/
-
-
+}
 
 #bar {
 	padding: 20px;
 }
 
 
-/*#head {
-	text-align: left;
-	font-size: 20px;
-	padding-top: 18px;
-}*/
 
 #title {
 	text-align: left;
-	font-size: 20px;/*
-	font-family: 'Hind', sans-serif;*/
+	font-size: 20px;
+	font-family: 'Hind', sans-serif;
 	padding-top: 20px;
 }
 
-#body {
-	text-align: left;
-	font-size: 16px;/*
-	font-family: 'Hind', sans-serif;*/
-	/*font-family: 'Bellefair', serif;*/
-	/*font-family: 'GFS Didot', serif;*/
+
+li {
+	padding-top: 1%;
+	padding-bottom: 1%;
 }
 
 a {
@@ -61,9 +116,5 @@ a:hover {
      color:#73213D; 
      text-decoration:none; 
      cursor:pointer;  
-}
-
-.jumbotron {
-	padding-top: 15px;
 }
 
