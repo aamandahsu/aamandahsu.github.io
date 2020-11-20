@@ -1,6 +1,11 @@
+hr {
+  background-color:black;
+  height: 1px;
+}
+
 button {
   border: solid;
-  color: #73213D;
+  color: #9F6A7C;
   padding: 10px 20px;
   text-align: center;
   text-decoration: none;
@@ -12,9 +17,9 @@ button {
 }
 button:hover {
   border: solid;
-  color: #73213D;
-  background-color: #73213D;
-  border-color: #73213D;
+  color: #9F6A7C;
+  background-color: #9F6A7C;
+  border-color: #9F6A7C;
   color: white;
   padding: 10px 20px;
   text-align: center;
