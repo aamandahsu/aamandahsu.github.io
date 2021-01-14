@@ -1,3 +1,79 @@
+@import url("fonts.css");
+@import url('https://rsms.me/inter/inter.css');
+
+
+.carousel {
+  font-size: 60px;
+  /*font-family: "librebaskerville-regular", serif;*/
+  font-family: 'Inter', sans-serif;
+  /*color: #854059;*/
+  animation: color-change 8s infinite;
+  margin-top: 12%;
+  margin-bottom: 12%;
+  display: block;
+  min-height: 250px;
+}
+
+@keyframes color-change {
+  /*0% { color: #854059; }
+  50% { color: #9A7B86; }
+  100% { color: #854059; }*/
+
+  0% {
+    color: #9C8AAE;
+  }
+  10% {
+    color: #CC86A8;
+  }
+  20% {
+    color: #D0A790;
+  }
+  30% {
+    color: #D8CD92;
+  }
+  40% {
+    color: #85AD73;
+  }
+  50% {
+    color: #7DB1AE;
+  }
+  60% {
+    color: #8E9CCF;
+  }
+  70% {
+    color: #9C8AAE;
+  }
+  80% {
+    color: #CC86A8;
+  }
+  90% {
+    color: #D0A790;
+  }
+  100% {
+    color: #D8CD92;
+  }
+}
+
+
+.container {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+
+
+.row-content {
+  padding-left: 13%;
+  padding-right: 13%;
+  display: block;
+}
+
+.projects {
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-bottom: 80px;
+}
+
 hr {
   background-color:black;
   height: 1px;
@@ -35,6 +111,10 @@ button:hover {
 	margin-top: 18px;
 }
 
+#light {
+  /*background-color: #363636;*/
+  /*display: inline-block;*/
+}
 
 #projname {
 	text-align: left;
@@ -60,9 +140,20 @@ button:hover {
 	padding-right: 8%;
 }
 
+#head {
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-top: 2%;
+  /*padding-bottom: 2%;*/
+}
+
 div {
-	padding-left: 8%;
-	padding-right: 8%;
+	padding-left: 2%;
+	padding-right: 2%;
+  margin-left: 0px;
+  margin-right: 0px;
+  width: 100%;
+  /*display: inline;*/
 }
 
 body {
@@ -70,12 +161,17 @@ body {
 	margin: 0;
 	text-align: center;
 	width: 100%;
+  background-color: #282828;
+}
+
+.project-section {
+  background-color: #363636;
 }
 
 h1 {
 	/*font-size: 60px;*/
 	/*font-family: Bodoni 72, serif;*/
-	/*color: #707070;*/ 
+	color: #707070; /*cream*/
 	text-align: left;
 	padding: 15px 0;
 	margin-top: 30px;
@@ -89,23 +185,35 @@ footer .row {
 }
 
 
-#contact {
-	padding-right: 300px 0;
-}
-
 #bar {
-	padding: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  line-height: 60px;
+  /*font-family: "montserrat-medium", sans-serif;*/
+  font-family: 'Inter', sans-serif;
 }
 
 
 
 a {
-    color: black;
+    color: #854059;
+    /*color: #F0F0F0;*/
     text-decoration: none;
 }
 
 a:hover {
      color:#73213D; 
+     /*color: #854059;*/
      text-decoration:none; 
      cursor:pointer;  
 }
+
+.current-link {
+    color: #73213D;
+}
+
+/*@media (min-width: 1200px) .container {
+  width: 100%;
+}
+*/
+

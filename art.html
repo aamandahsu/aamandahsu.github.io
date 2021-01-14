@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Amanda Hsu </title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+	<link rel="stylesheet" type="text/css" href="art.css">
+	<script src="designJS.js">
+		// document.querySelectorAll('a[href="'+document.URL+'"]').forE‌​ach(function(elem){e‌​lem.className += ' current-link'});
+
+		function getCurrentLinkFrom(links){
+
+		    var curPage = document.URL;
+		    curPage = curPage.substr(curPage.lastIndexOf("/")) ;
+
+		    links.each(function(){
+		        var linkPage = $(this).attr("href");
+		        linkPage = linkPage.substr(linkPage.lastIndexOf("/"));
+		        if (curPage == linkPage){
+		            return $(this);
+		        }
+		    });
+		};
+
+		$(document).ready(function(){
+		    var currentLink = getCurrentLinkFrom($("navbar a"));
+		    currentLink.addClass("current_link") ;
+		});
+
+	</script>
+
+	
+	<style>
+      body {
+
+      	/*font-family: 'Inter', sans-serif;*/
+
+        /*font-family: 'Barlow', serif;*/
+        /*font-size: 48px;*/
+      }
+    </style>
+    <link rel="icon" href="favicon.png">
+
+</head>
+<div class="container-fluid">
+	<body>
+
+		<div class="row" style="font-family: Barlow;" id="head">
+			<!-- <h1 class="col-sm-4"; id="amanda"> <a href="index.html"><img border="0" alt="Amanda Hsu" src="ahlogo.png" width=22%></a> </h1> -->
+			<nav class="col-sm-4 text-left"><a href="index.html"><img border="0" alt="Amanda Hsu" src="topleftlogo.png" height="60px;"></a></nav>
+		      <nav class="col-sm-8 text-right">
+		        <!-- <a href="aboutme.html" id="bar"> About Me </a> -->
+		        <a href="design.html" id="bar"> <b>DESIGN</b> </a>
+		        <a href="art.html" id="bar" class="current-link"> <b>ART</b> </a>
+		        <a href="about.html" id="bar"> <b>ABOUT</b> </a>
+		        <a href="designresume.pdf" id="bar"> <b>RESUME</b> </a>
+		      </nav>
+		</div>
+		
+		
+		<div class="gallery" id="gallery" style="padding-top: 2%">
+				  <div class="col-sm-4" style="float:left;" id="left">
+				  	<img src="bats.jpg" style="width:100%;padding-bottom: 30px;" class="img">
+				  	<img src="carnage.jpg" style="width:100%;padding-bottom: 33px;" loading="lazy" class="img">
+				  	
+				  	<img src="stage.jpg" style="width:100%;padding-bottom: 33px;" loading="lazy" class="img">
+				    <!-- <img src="apple.jpg" style="width:100%;padding-bottom: 33px;" loading="lazy" class="img"> -->
+				    <!-- <img src="thread.jpg" style="width:100%;padding-bottom: 33px;" loading="lazy" class="img"> -->
+				    <img src="jilmapen.jpg" style="width:100%;padding-bottom: 33px;" class="img" loading="lazy">
+				    <!-- <img src="4unner_img.jpg" style="width:100%;padding-bottom: 33px;" loading="lazy" class="img"> -->
+				  </div>
+				  <div class="col-sm-4" style="float:left;" id="mid">
+				    <img src="twofaced.jpg" style="width:100%;padding-bottom: 33px;" class="img" loading="lazy">
+				    <!-- img src="controller.jpg" style="width:100%;padding-bottom: 33px;" class="img" loading="lazy"> -->
+					<img src="infected.jpg" style="width:100%;padding-bottom: 33px;" loading="lazy" class="img">		
+				    <img src="cliff.jpg" style="width:100%;padding-bottom: 33px;" loading="lazy" class="img">
+				    <img src="hana.jpg" style="width:100%;padding-bottom: 33px;" loading="lazy" class="img">
+				    <!-- <img src="nati_image.jpg" style="width:100%;padding-bottom: 33px;" class="img" loading="lazy"> -->
+				 <!--    <img src="aiko.jpg" style="width:100%;padding-bottom: 33px;" class="img"> -->
+				  </div>
+				  <div class="col-sm-4" style="float:left;" id="right" loading="lazy">
+				  	<img src="tobi.jpg" style="width:100%;padding-bottom: 33px;" class="img" loading="lazy">
+				  	
+				  	<img src="clown.jpg" style="width:100%;padding-bottom: 33px;" class="img" loading="lazy">
+				    <img src="hanging.jpg" style="width:100%;padding-bottom: 33px;" class="img" loading="lazy">
+				    <!-- <img src="disguised.jpg" style="width:100%;padding-bottom: 33px;" class="img" loading="lazy"> -->
+
+				    <img src="jilmacolor.jpg" style="width:100%;padding-bottom: 33px;" class="img">
+				    <img src="me.jpg" style="width:100%;padding-bottom: 33px;" class="img">
+				    <!-- <img src="confined.jpg" style="width:100%;padding-bottom: 33px;" class="img"> -->
+				    <!-- <img src="dcdesign.jpg" style="width:100%;padding-bottom: 33px;" class="img"> -->
+				    <!-- <img src="skeleton.jpg" style="width:100%;padding-bottom: 33px;" class="img"> -->
+				  </div>
+			</div>
+
+    		
+	</body>
+</div>
+</html>

@@ -5,36 +5,53 @@
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
 	<link rel="stylesheet" type="text/css" href="squid.css">
-	<script src="javascript.js"></script>
+	<script src="designJS.js">
+		// document.querySelectorAll('a[href="'+document.URL+'"]').forE‌​ach(function(elem){e‌​lem.className += ' current-link'});
 
+		function getCurrentLinkFrom(links){
 
-	<link rel="stylesheet"
-          href="https://fonts.googleapis.com/css?family=Barlow">
-	<style>
-      body {
-        font-family: 'Barlow', serif;
-        /*font-size: 48px;*/
-      }
-    </style>
+		    var curPage = document.URL;
+		    curPage = curPage.substr(curPage.lastIndexOf("/")) ;
+
+		    links.each(function(){
+		        var linkPage = $(this).attr("href");
+		        linkPage = linkPage.substr(linkPage.lastIndexOf("/"));
+		        if (curPage == linkPage){
+		            return $(this);
+		        }
+		    });
+		};
+
+		$(document).ready(function(){
+		    var currentLink = getCurrentLinkFrom($("navbar a"));
+		    currentLink.addClass("current_link") ;
+		});
+
+	</script>
+
+	
+	<style></style>
+	
     <link rel="icon" href="favicon.png">
 
-
 </head>
-<div class="container">
+<div class="container-fluid">
 	<body>
 
-		<div class="row" style="padding-bottom: 1%;font-family: Barlow;" id="head">
-            <nav class="col-sm-4 text-left" style="padding-top: 3%"><a href="index.html"><img border="0" alt="Amanda Hsu" src="ahlogo.png" width=24%></a></nav>
-              <nav class="col-sm-8 text-right" style="padding-top: 6%">
-                <!-- <a href="aboutme.html" id="bar"> About Me </a> -->
-                <a href="design.html" id="bar"> Design </a>
-                <a href="finearts.html" id="bar"> Art </a>
-                <a href="contact.html" id="bar"> About </a>
-                <a href="designresume.pdf" id="bar"> Resume </a>
-              </nav>
-        </div>
-        
-		<div class="container">
+		<div class="row" style="font-family: Barlow;" id="head">
+			<!-- <h1 class="col-sm-4"; id="amanda"> <a href="index.html"><img border="0" alt="Amanda Hsu" src="ahlogo.png" width=22%></a> </h1> -->
+			<nav class="col-sm-4 text-left"><a href="index.html"><img border="0" alt="Amanda Hsu" src="topleftlogo.png" height="60px;"></a></nav>
+		      <nav class="col-sm-8 text-right">
+		        <!-- <a href="aboutme.html" id="bar"> About Me </a> -->
+		        <a href="design.html" id="bar"> <b>DESIGN</b> </a>
+		        <a href="art.html" id="bar"> <b>ART</b> </a>
+		        <a href="about.html" id="bar"> <b>ABOUT</b> </a>
+		        <a href="designresume.pdf" id="bar"> <b>RESUME</b> </a>
+		      </nav>
+		</div>
+		
+<!-- 
+		<div class="container"> -->
 			<div class="row" style="padding-top: 3%">
 				<div class="col-sm-4" style="padding-right: 4%; text-align: right;padding-bottom: 20%;">
 			      <p id="tags"> USER EXPERIENCE &nbsp;&nbsp;&nbsp;&nbsp; INTERACTION DESIGN</p>
@@ -45,7 +62,7 @@
 			      <img src="squidscover3d.png" style="width:100%;padding-top:3%;" id="img">
 			    </div>
     		</div>
-        </div>
+        <!-- </div> -->
 
     		<!-- Problem/details -->
     		<div class="row">
@@ -91,10 +108,10 @@
 
 
     		<div class="row">
-    			<div class="col-sm-3" style="padding-bottom: 20%;padding-right: 5%;">
-    				<p style="text-align: right;" id="sectiontitle">COMPETITIVE ANALYSIS</p>
+    			<div class="col-sm-6" style="padding-bottom: 20%;padding-right: 5%;">
+    				<p style="text-align: right;" id="sectiontitle">COMPETITOR ANALYSIS</p>
     			</div>
-    			<div class="col-sm-9" style="padding-bottom: 20%;padding-left: 5%;">
+    			<div class="col-sm-6" style="padding-bottom: 20%;padding-left: 5%;">
     				<p id="sectiontext">It was clear that there wasn’t an all-in-one application that the college demographic had adopted for their messaging and social needs. Though WeChat was popular in the Chinese community, its users primarily consisted of older generations. </p> 
     				<p id="sectiontext">When2Meet was extremeley popular among clubs and in professional communities, but not wihtin friend groups because many felt it was inconvenient to set it up for something like a group workout or lunch. However, there was minimal effort on both the host's and guest's part after the initial set up.</p> 
     			</div>
@@ -129,17 +146,17 @@
 
     		<!-- feedback and iterations --><!-- bringing it 2life -->
     		<div class="row">
-    			<div class="col-sm-4" style="padding-bottom:20%;padding-left: 5%">
-    				<p style="text-align: right;" id="sectiontitle">FEEDBACK AND ITERATION</p>
+    			<div class="col-sm-4" style="padding-bottom:20%;">
+    				<p style="text-align: right;" id="sectiontitle">TAKING FEEDBACK</p>
     			</div>
     			<div class="col-sm-8" style="padding-bottom:20%;padding-right: 13%;padding-left: 5%">
-    				<p id="sectiontext">After receiving feedback on the initial designs, there were a few things that I thought could be improved.
+    				<p id="sectiontext">After receiving feedback on the initial designs, there were a few things that I thought could be improved.</p>
     					<ul>
 							<li>Greater visual disctinction on the Squids Page (Home) within each step of the event creation process (ex. color or shape change on event banner rather than just having text label)</li>
 							<li>Simplifying the design for how the host chooses a final event time</li>
 							<li>Different icons or colors representating different categories of events (ex. meal, workout, study) </li>
 						</ul>
-    				Based on these improvements, I began to create high fidelity protoypes through Figma.</p>
+    				<p id="sectiontext">Based on these improvements, I began to create high fidelity protoypes through Figma.</p>
     			</div>
     		</div>
 
@@ -148,7 +165,7 @@
             <section id="final">
 
                 <div class="row">
-                    <p style="text-align: center;padding-bottom: 5%;padding-top: 5%;color: gray;"id="sectiontitle">THE FINAL PRODUCT</p>
+                    <p style="text-align: center;padding-bottom: 5%;padding-top: 5%;color: #282828;"id="sectiontitle">THE FINAL PRODUCT</p>
                 </div>
 
                 <div class="row align-items-center">
@@ -162,8 +179,8 @@
 
                     <div class="col-sm-6 my-auto" style="text-align: left; padding-bottom: 10%;padding-right: 12%;padding-top: 13%;">
                         <p id="subsectiontitle">HOST VIEW</p>
-                        <p id="sectiontext">After a few iterations, we refined the host-side of event planning to include these modifications:
-                            <ul>
+                        <p id="subsectiontext">After a few iterations, we refined the host-side of event planning to include these modifications:
+                            <ul style="color: #282828">
                                 <li>Consolidating the time and availability sections into a single element that allows  the host to select their preferred times within a scrollable five-hour window [0:20]</li>
                                 <li>Formalizing the "Set Time" process by having the host select the final time through a set of pop-up windows rather than directly on the Event Page [0:58]</li>
                             </ul>
@@ -177,8 +194,8 @@
 
                     <div class="col-sm-6" style="text-align: left; padding-bottom: 12%;padding-left: 12%;padding-top: 14%;">
                         <p id="subsectiontitle">GUEST VIEW</p>
-                        <p id="sectiontext">We also made the following changes to the guest-side of the event creation process:
-                            <ul>
+                        <p id="subsectiontext">We also made the following changes to the guest-side of the event creation process:
+                            <ul style="color: #282828">
                                 <li>Guests can easily RSVP to events through the event banner on the Squids Page (Home) by toggling the "going" and "not going" buttons [0:36]</li>
                                 <li>In order to create a visual disctinction for events that the guest has RSVP'd "yes" to, we added a colored outline that corresponds to the event category [0:39]</li>
                             </ul>
@@ -198,16 +215,17 @@
     		
             <div class="row" style="padding-top: 20%">
                 <div class="col-sm-4" style="padding-bottom:20%;padding-left: 5%">
-                    <p style="text-align: right;" id="sectiontitle">LESSONS LEARNED AND REFLECTIONS</p>
+                    <p style="text-align: right;" id="sectiontitle">LOOKING BACK</p>
                 </div>
                 <div class="col-sm-8" style="padding-bottom:20%;padding-right: 13%;padding-left: 5%">
                     <p id="sectiontext">One of the biggest takeaways from this project was learning to <i>design scalable systems.</i>  In the past I often framed design as coming up with solutions that best solved the current problem at hand—however, working real-time with an software development team that was coding alongside the design process made me realize the importance of including features that could be scaled later on. As an example, we made sure that our final time selection/add availability section could be scaled so hosts could provide multi-day options for guests as well. In addition, adding the map display on the final event page creates potential for other event related features.</p>
-                    <p>Interested in the other pages I designed for this app? <a href = "mailto:amandahsu@berkeley.edu?subject = Let's Chat!"><u>Let's chat!</u></a> :)</p>
+                    <p id="sectiontext">Interested in the other pages I designed for this app? <a href = "mailto:amandahsu@berkeley.edu?subject = Let's Chat!"><u>Let's chat!</u></a> :)</p>
                 </div>
             </div>
             
 
-		</div>
+
+    		
 	</body>
 </div>
 </html>

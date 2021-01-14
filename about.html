@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Amanda Hsu </title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+	<link rel="stylesheet" type="text/css" href="about.css">
+	<script src="designJS.js">
+		// document.querySelectorAll('a[href="'+document.URL+'"]').forE‌​ach(function(elem){e‌​lem.className += ' current-link'});
+
+		function getCurrentLinkFrom(links){
+
+		    var curPage = document.URL;
+		    curPage = curPage.substr(curPage.lastIndexOf("/")) ;
+
+		    links.each(function(){
+		        var linkPage = $(this).attr("href");
+		        linkPage = linkPage.substr(linkPage.lastIndexOf("/"));
+		        if (curPage == linkPage){
+		            return $(this);
+		        }
+		    });
+		};
+
+		$(document).ready(function(){
+		    var currentLink = getCurrentLinkFrom($("navbar a"));
+		    currentLink.addClass("current_link") ;
+		});
+
+	</script>
+
+	
+	<style>
+      body {
+
+      	/*font-family: 'Inter', sans-serif;*/
+
+        /*font-family: 'Barlow', serif;*/
+        /*font-size: 48px;*/
+      }
+    </style>
+    <link rel="icon" href="favicon.png">
+
+</head>
+<div class="container-fluid">
+	<body>
+
+		<div class="row" style="font-family: Barlow;" id="head">
+			
+			<nav class="col-sm-4 text-left"><a href="index.html"><img border="0" alt="Amanda Hsu" src="topleftlogo.png" height="60px;"></a></nav>
+		      <nav class="col-sm-8 text-right">
+		        <!-- <a href="aboutme.html" id="bar"> About Me </a> -->
+		        <a href="design.html" id="bar"> <b>DESIGN</b> </a>
+		        <a href="art.html" id="bar"> <b>ART</b> </a>
+		        <a href="about.html" id="bar" class="current-link"> <b>ABOUT</b> </a>
+		        <a href="designresume.pdf" id="bar"> <b>RESUME</b> </a>
+		      </nav>
+		</div>
+		
+		
+		<div class="row" style="padding-top: 5%;">
+				
+    			<div id="aboutme" class="col-sm-5 text-left" style="width:46%;" id="words">
+    				<div id="bio">
+    					<h1>Hey, it's Amanda!</h1>
+
+				</div>
+    					<p style="padding-bottom: 3%"> I’m a junior at UC Berkeley studying Cognitive Science and Computer Science. I am deeply curious about the people and world around me, and funnel that curiosity into creating seamless experiences that are designed with empathy.</p> 
+    					<p>Apart from designing and coding, my favorite things include running, browsing stunning mid-century modern homes on Zillow, and beginning my mornings with the New York Times mini crossword and a cup of extra strong coffee.</p>
+    				</div>
+    				<div id="contact">
+    					<p><b>let's chat: </b>
+    							<a href = "mailto:amandahsu@berkeley.edu?subject = Let's Chat!">amandahsu@berkeley.edu</a>
+    					</p>
+     					<p>
+     						<a id= "links" href="designresume.pdf"><b>resume</b></a>
+     						<a id= "links" href="https://www.linkedin.com/in/amandalhsu/"><b>linkedin</b></a>
+     						<a id= "links" href="https://www.instagram.com/aaxaart/"><b>instagram</b></a>
+     					</p>
+    					<p></p>
+    					<p></p>
+    				</div>
+    			</div>
+    			<div class="col-sm-7" style="width:54%;" id="me">
+      				<img src="yagirl.png" style="width:100%;" class="img">
+    			</div>
+			</div>
+
+    		
+	</body>
+</div>
+</html>

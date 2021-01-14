@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Amanda Hsu </title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+	<link rel="stylesheet" type="text/css" href="dc.css">
+	<script src="designJS.js">
+		// document.querySelectorAll('a[href="'+document.URL+'"]').forE‌​ach(function(elem){e‌​lem.className += ' current-link'});
+
+		function getCurrentLinkFrom(links){
+
+		    var curPage = document.URL;
+		    curPage = curPage.substr(curPage.lastIndexOf("/")) ;
+
+		    links.each(function(){
+		        var linkPage = $(this).attr("href");
+		        linkPage = linkPage.substr(linkPage.lastIndexOf("/"));
+		        if (curPage == linkPage){
+		            return $(this);
+		        }
+		    });
+		};
+
+		$(document).ready(function(){
+		    var currentLink = getCurrentLinkFrom($("navbar a"));
+		    currentLink.addClass("current_link") ;
+		});
+
+	</script>
+
+	
+	<style></style>
+	
+    <link rel="icon" href="favicon.png">
+
+</head>
+<div class="container-fluid">
+	<body>
+
+		<div class="row" style="font-family: Barlow;" id="head">
+			<!-- <h1 class="col-sm-4"; id="amanda"> <a href="index.html"><img border="0" alt="Amanda Hsu" src="ahlogo.png" width=22%></a> </h1> -->
+			<nav class="col-sm-4 text-left"><a href="index.html"><img border="0" alt="Amanda Hsu" src="topleftlogo.png" height="60px;"></a></nav>
+		      <nav class="col-sm-8 text-right">
+		        <!-- <a href="aboutme.html" id="bar"> About Me </a> -->
+		        <a href="design.html" id="bar"> <b>DESIGN</b> </a>
+		        <a href="art.html" id="bar"> <b>ART</b> </a>
+		        <a href="about.html" id="bar"> <b>ABOUT</b> </a>
+		        <a href="designresume.pdf" id="bar"> <b>RESUME</b> </a>
+		      </nav>
+		</div>
+		
+<!-- 
+		<div class="container"> -->
+			<div class="row" style="padding-top: 3%">
+				<div class="col-sm-12" style="padding-right: 5%; text-align: right;padding-bottom: 20%;">
+				  <img src="dcbanner3.jpg" style="width:100%;padding-bottom: 1%" id="img">
+			      <p id="tags"> INTERFACE DESIGN &nbsp;&nbsp;&nbsp;&nbsp; BRAND MARKETING</p>
+			      <p id="projname">DC GOES MOBILE</p>
+			      <p id="overview">A mobile application for The Daily Californian, a student-run newspaper for the City of Berkeley. I designed an interface that integrates campus news with student resources and includes a “Daily Discover” page that curates a personalized playlist of articles to increase readership rates.</p>
+			    </div>
+    		</div>
+        <!-- </div> -->
+
+    		<!-- Problem/details -->
+    		<div class="row">
+				<div class="col-sm-6" style="padding-left: 2%; text-align: left; padding-bottom: 20%;">
+					<p id="sectiontitle" style="color: white">DETAILS</p>
+					<p id="sectiontext"><b>My Role:</b> Design Lead and Product Marketing Associate</p>
+					<p id="sectiontext"><b>Skills:</b> Prototyping, Wire Framing, Brand Marketing, and User Interface Design </p>
+					<p id="sectiontext"><b>Duration:</b> In progress!</p>
+					<p id="sectiontext"><b>Tools:</b> Figma, React Native</p>
+					<p id="sectiontext"><b>Team:</b> Amanda Hsu, Tyler Wu (Project Lead), Pranav Saravanan (Marketing), Kevin Wu (Head of Development)</p>
+				</div>
+			    <div class="col-sm-6" style="padding-bottom: 20%">
+			      <img src="dcbanner2.png" style="width:100%;padding-top:3%;" id="img">
+			    </div>
+    		</div>
+
+    		 <div class="row">
+        		
+				<div class="col-sm-4" style="padding-right: 5%; text-align: left; padding-bottom: 20%;">
+					<p id="sectiontitle">THE PROBLEM</p>
+					<p id="sectiontext">Cal students are driven by the world around us; we deeply value staying informed about current events in the news as well as within our respective industries--especially with our Silicon Valley neighbors close by. </p>
+					<p id="sectiontext">Despite the continual learning we do as UC Berkeley students and global citizens, The Daily Cal hs been struggling with readership rates as students overlook local news within the charming city so many of us call home: Berkeley.</p>
+				</div>
+
+				<div class="col-sm-8" style="padding-bottom: 20%"> 
+			      <img src="dcstats.png" style="width:100%;padding-top:3%;" id="img">
+			    </div>
+				
+    	</div>
+
+    	<div class="row">
+				<div class="col-sm-6" style="padding-bottom: 20%"> 
+			      <img src="gobears.jpg" style="width:100%;padding-top:3%;" id="img">
+			    </div>
+				<div class="col-sm-6" style="padding-left: 5%; text-align: left; padding-bottom: 20%;">
+					<p id="sectiontitle">GETTING TO KNOW OUR COMMUNITY</p>
+					<p id="sectiontext">As a campus org, we specifically wanted to increase readership among students. We spoke directly with them to understand their relationship with local/city news and how Daily Cal could play a useful role in their lives. </p>
+					<p id="sectiontext"> Below are some insights from the interviews:
+						<ul>
+						
+							<li>Most students are redirected to the DC articles through Facebook posts</li>
+							<li>Many felt the mobile site to be difficult to navigate</li>
+							<li>Students felt a disconnect between their students lives and Berkeley local news</li>
+
+						</ul>
+					</p>
+				</div>
+    	</div>
+
+    	<div class="row">
+				<div class="col-sm-12" style="padding-left: 5%; text-align: left; padding-bottom: 20%;">
+					<p id="sectiontitle">GOALS AND IDEATION</p>
+					<p id="sectiontext">We wanted to create a mobile application in response to student feedback that the DC mobile site was hard to navigate. As one of the largest public universities, Berkeley lacks many student resources; we believed that including additional student resources in the app (such as campus or building maps, Cal event reminders, etc.) would incentivize students to download and use the app, therefore increasing DC exposure and readership.</p>
+					<p id="sectiontext"> After reaching out to other student publications that had a mobile app (The Stanford Daily at Stanford, Washington Square News at NYU) to learn about their development process, we presented our project proposal to the DC's Business department and were approved after outlining how a mobile app could simultaneously further DC's business goals while benefitting student lives.
+						<ul>
+						
+							<li>Most students are redirected to the DC articles through Facebook posts</li>
+							<li>Many felt the mobile site to be difficult to navigate</li>
+							<li>Students felt a disconnect between their students lives and Berkeley local news</li>
+
+						</ul>
+					</p>
+				</div>
+    	</div>    		
+            
+
+
+    		
+	</body>
+</div>
+</html>

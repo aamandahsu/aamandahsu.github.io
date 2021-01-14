@@ -1,0 +1,120 @@
+body {
+	/*font-size: 16px;*/
+	font-family: 'Barlow';
+	margin:0;
+	height: 100%;
+	width: 100%;
+}
+
+h1 {
+	/*font-size: 60px;*/
+	/*font-family: Bodoni 72, serif;*/
+	/*color: #707070;*/ 
+	text-align: left;
+	padding: 15px 0;
+	margin-top: 30px;
+}
+
+
+div {
+	padding-left: 8%;
+	padding-right: 8%;
+}
+
+
+#final {
+	background-color: #EEEEEE;
+	width:100%;
+}
+
+
+#projname {
+	text-align: right;
+	font-size: 52px;
+	padding-top: 18px;
+	font-family: 'Futura'
+}
+
+#tags {
+	text-align: right;
+	font-size: 14px;
+	padding-top: 18px;
+}
+
+#intro {
+	padding-top: 3%;
+}
+
+#overview {
+	text-align: right;
+	font-size: 16px;
+	padding-top: 18px;
+}
+
+/*#section {
+	padding-top: 4%;
+	padding-bottom: 10%;
+}*/
+
+#sectiontitle {
+	font-size: 32px;
+	font-family: 'Futura'
+}
+
+#subsectiontitle {
+	font-size: 24px;
+	font-family: 'Futura'
+}
+
+
+
+
+#amanda {
+	/*font-size: 60px;*/
+	font-family: Bodoni 72, serif;
+	/*color: #707070; */
+	text-align: left;
+	padding: 15px 0;
+	margin-top: 30px;
+}
+
+#photodesc {
+	color:gray;
+}
+
+
+
+#contact {
+	padding-right: 300px 0;
+}
+
+#bar {
+	padding: 20px;
+}
+
+
+
+#title {
+	text-align: left;
+	font-size: 20px;
+	font-family: 'Hind', sans-serif;
+	padding-top: 20px;
+}
+
+
+li {
+	padding-top: 1%;
+	padding-bottom: 1%;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+     color:#73213D; 
+     text-decoration:none; 
+     cursor:pointer;  
+}
+
