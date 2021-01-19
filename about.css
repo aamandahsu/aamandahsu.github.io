@@ -3,11 +3,12 @@
 
 
 .col-sm-7 {
-	padding-left: 5%;
+	padding-left: 8%;
+	padding-right: 8%;
 }
 
 .col-sm-5 {
-	padding-left: 10%;
+	padding-left: 8%;
 }
 
 .container {
@@ -16,18 +17,6 @@
 }
 
 
-
-.row-content {
-  padding-left: 13%;
-  padding-right: 13%;
-  display: block;
-}
-
-.projects {
-	padding-left: 40px;
-	padding-right: 40px;
-	padding-bottom: 80px;
-}
 
 hr {
   background-color:black;
@@ -62,20 +51,7 @@ button:hover {
   cursor: pointer;
 }
 
-#readmore {
-	margin-top: 18px;
-}
 
-#overview {
-	text-align: left;
-	font-size: 16px;
-	padding-top: 18px;
-}
-
-#intro {
-	padding-left: 8%;
-	padding-right: 8%;
-}
 
 #head {
   margin-left: 0px;
@@ -102,17 +78,18 @@ body {
   	font-family: 'Inter', sans-serif;
 }
 
-.project-section {
-  background-color: #363636;
+#aboutme {
+	padding-top: 0px;
 }
 
 h1 {
-	/*font-size: 60px;*/
+	font-size: 48px;
 	/*font-family: Bodoni 72, serif;*/
-	color: #707070; /*cream*/
+	color: #AB919A; /*cream*/
 	text-align: left;
-	padding: 15px 0;
-	margin-top: 30px;
+	margin-top: 0px;
+	padding-bottom: 25px;
+	font-weight: bold;
 }
 
 
@@ -145,7 +122,7 @@ a:hover {
 }
 
 .current-link {
-    color: #9993B2;
+    color: #73213D;
 }
 
 p {
@@ -156,8 +133,7 @@ p {
 #greeting {
 	font-size: 2em;
 	margin-bottom: 1.5em;
-	/*color: #A38560;*/ /*cafe*/
-	color: #9993B2;
+	color: #A38560; 
 }
 
 #contact {
@@ -170,6 +146,10 @@ p {
 	margin-right: 12px;
 	color: #C8C8C8;
 
+}
+
+#links:hover {
+	color:#73213D; 
 }
 
 /*@media (min-width: 1200px) .container {
